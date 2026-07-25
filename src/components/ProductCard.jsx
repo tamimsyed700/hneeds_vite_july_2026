@@ -1,20 +1,30 @@
 import { IconWhatsapp } from './icons'
+import useInteracted from '../hooks/useInteracted'
 
 export default function ProductCard({ product }) {
   const waMessage = encodeURIComponent(`Hi, I'd like to enquire about ${product.name} (${product.size}).`)
+  const interacted = useInteracted()
 
   return (
     <div className="group flex flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg hover:shadow-emerald-900/5">
       <div className="flex aspect-square items-center justify-center bg-slate-50 p-6">
-        <picture>
-          <source srcSet={product.image.replace(/\.jpg$/, '.webp')} type="image/webp" />
-          <img
-            src={product.image}
-            alt={product.name}
-            loading="lazy"
-            className="h-full w-full object-contain transition duration-300 group-hover:scale-105"
-          />
-        </picture>
+        {interacted && (
+          <picture>
+            <source
+              type="image/webp"
+              srcSet={[320, 480, 640].map((w) => `${product.image.replace(/\.jpg$/, `-${w}w.webp`)} ${w}w`)
+                .concat(`${product.image.replace(/\.jpg$/, '.webp')} 800w`)
+                .join(', ')}
+              sizes="(min-width: 1280px) 22vw, (min-width: 1024px) 28vw, (min-width: 640px) 40vw, 70vw"
+            />
+            <img
+              src={product.image}
+              alt={product.name}
+              loading="lazy"
+              className="h-full w-full object-contain transition duration-300 group-hover:scale-105"
+            />
+          </picture>
+        )}
       </div>
       <div className="flex flex-1 flex-col gap-2 p-5">
         <div className="flex items-start justify-between gap-2">
