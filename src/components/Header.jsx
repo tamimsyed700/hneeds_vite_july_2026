@@ -1,13 +1,8 @@
 import { useEffect, useState } from 'react'
 import { IconLeaf, IconPhone } from './icons'
+import content from '../data/content.json'
 
-const NAV = [
-  { href: '#essentials', label: 'Essentials' },
-  { href: '#bulk', label: 'Bulk Packs' },
-  { href: '#accessories', label: 'Accessories' },
-  { href: '#combo', label: 'Combo' },
-  { href: '#contact', label: 'Contact' },
-]
+const { site, nav: NAV } = content
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false)
@@ -31,9 +26,9 @@ export default function Header() {
             <IconLeaf className="h-5 w-5" />
           </span>
           <span className="leading-tight">
-            <span className="block text-lg font-bold tracking-tight text-emerald-900">H-NEEDS</span>
+            <span className="block text-lg font-bold tracking-tight text-emerald-900">{site.brandName}</span>
             <span className="block text-[11px] font-medium uppercase tracking-widest text-emerald-700">
-              Feathers Hygiene Range
+              {site.brandSubtitle}
             </span>
           </span>
         </a>
@@ -52,11 +47,11 @@ export default function Header() {
 
         <div className="hidden items-center gap-2 md:flex">
           <a
-            href="tel:+917708840444"
+            href={`tel:${site.phone}`}
             className="flex items-center gap-2 rounded-full border border-emerald-200 px-4 py-2 text-sm font-semibold text-emerald-800 transition hover:border-emerald-400 hover:bg-emerald-50"
           >
             <IconPhone className="h-4 w-4" />
-            77088 40444
+            {site.phoneDisplay}
           </a>
         </div>
 
@@ -81,8 +76,8 @@ export default function Header() {
               {item.label}
             </a>
           ))}
-          <a href="tel:+917708840444" className="rounded-lg px-3 py-2 text-sm font-semibold text-emerald-800">
-            Call 77088 40444
+          <a href={`tel:${site.phone}`} className="rounded-lg px-3 py-2 text-sm font-semibold text-emerald-800">
+            Call {site.phoneDisplay}
           </a>
         </nav>
       )}

@@ -1,5 +1,6 @@
 import { IconWhatsapp } from './icons'
 import useInteracted from '../hooks/useInteracted'
+import content from '../data/content.json'
 
 export default function ProductCard({ product }) {
   const waMessage = encodeURIComponent(`Hi, I'd like to enquire about ${product.name} (${product.size}).`)
@@ -44,7 +45,7 @@ export default function ProductCard({ product }) {
             <span className="text-sm font-medium text-slate-500">Price on enquiry</span>
           )}
           <a
-            href={`https://wa.me/917708840444?text=${waMessage}`}
+            href={`https://wa.me/${content.site.whatsapp}?text=${waMessage}`}
             target="_blank"
             rel="noreferrer"
             className="flex items-center gap-1.5 rounded-full bg-emerald-700 px-3.5 py-2 text-xs font-semibold text-white transition hover:bg-emerald-800"

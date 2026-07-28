@@ -1,9 +1,6 @@
-const STATS = [
-  { value: '20+', label: 'Formulations' },
-  { value: '5L', label: 'Bulk value packs' },
-  { value: '100%', label: 'Made in Chennai' },
-  { value: '99.9%', label: 'Germ kill claim' },
-]
+import content from '../data/content.json'
+
+const STATS = content.trustBar
 
 export default function TrustBar() {
   return (
