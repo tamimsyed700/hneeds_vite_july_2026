@@ -1,4 +1,5 @@
 import { IconLeaf, IconMail, IconMapPin, IconPhone } from './icons'
+import content from '../data/content.json'
 
 export default function Footer() {
   return (
@@ -10,12 +11,9 @@ export default function Footer() {
               <span className="flex h-9 w-9 items-center justify-center rounded-full bg-emerald-700">
                 <IconLeaf className="h-5 w-5" />
               </span>
-              <span className="text-lg font-bold">H-NEEDS</span>
+              <span className="text-lg font-bold">{content.brand.name}</span>
             </div>
-            <p className="mt-4 max-w-xs text-sm leading-relaxed text-emerald-200">
-              Feathers is H-NEEDS Hospitality's in-house range of organic-formula cleaning
-              essentials, trusted across homes, hotels and hospitality businesses.
-            </p>
+            <p className="mt-4 max-w-xs text-sm leading-relaxed text-emerald-200">{content.footer.tagline}</p>
           </div>
 
           <div>
@@ -23,16 +21,16 @@ export default function Footer() {
             <ul className="mt-4 space-y-3 text-sm text-emerald-100">
               <li className="flex items-start gap-3">
                 <IconMapPin className="mt-0.5 h-4 w-4 shrink-0 text-emerald-400" />
-                Kasturi Garden, 8th Cross Street, Palavakkam, ECR, Chennai&nbsp;600041
+                {content.contact.address}
               </li>
               <li className="flex items-center gap-3">
                 <IconPhone className="h-4 w-4 shrink-0 text-emerald-400" />
-                <a href="tel:+917708840444" className="hover:text-white">77088 40444</a>
+                <a href={`tel:${content.contact.phone}`} className="hover:text-white">{content.contact.phoneDisplay}</a>
               </li>
               <li className="flex items-center gap-3">
                 <IconMail className="h-4 w-4 shrink-0 text-emerald-400" />
-                <a href="mailto:hneedshospitality@gmail.com" className="hover:text-white">
-                  hneedshospitality@gmail.com
+                <a href={`mailto:${content.contact.email}`} className="hover:text-white">
+                  {content.contact.email}
                 </a>
               </li>
             </ul>
@@ -50,7 +48,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 border-t border-emerald-900 pt-6 text-xs text-emerald-300">
-          © {new Date().getFullYear()} H Needs Hospitality. All rights reserved.
+          © {new Date().getFullYear()} {content.footer.copyrightName}. All rights reserved.
         </div>
       </div>
     </footer>

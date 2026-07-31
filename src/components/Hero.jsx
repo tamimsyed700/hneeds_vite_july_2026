@@ -1,14 +1,7 @@
 import { useState } from 'react'
 import { IconCheck, IconChevronDown, IconLeaf, IconWhatsapp } from './icons'
 import useInteracted from '../hooks/useInteracted'
-
-const HIGHLIGHTS = [
-  'Organic-derived formulas',
-  'Hospital-grade disinfection',
-  'Made in Chennai',
-  'Doorstep delivery available',
-  'GST-compliant billing on all orders',
-]
+import content from '../data/content.json'
 
 export default function Hero() {
   const interacted = useInteracted()
@@ -24,21 +17,20 @@ export default function Hero() {
         <div className="flex min-h-[100svh] flex-col justify-center lg:min-h-0 lg:block">
           <span className="inline-flex animate-fade-in-up items-center gap-1.5 rounded-full border border-emerald-200 bg-white/80 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-emerald-800 shadow-sm">
             <IconLeaf className="h-3.5 w-3.5 text-emerald-600" />
-            Hospital &middot; House &middot; Hospitality &middot; Hotel
+            {content.hero.eyebrow}
           </span>
           <h1 className="mt-5 animate-fade-in-up text-4xl font-extrabold tracking-tight text-slate-900 [animation-delay:100ms] sm:text-5xl">
-            Feathers by <span className="whitespace-nowrap">H-NEEDS —</span>
+            {content.hero.headingPrefix}
             <span className="block bg-gradient-to-r from-emerald-600 via-emerald-700 to-teal-600 bg-clip-text text-transparent">
-              your trusted partner in hygiene.
+              {content.hero.headingHighlight}
             </span>
           </h1>
           <p className="mt-5 max-w-xl animate-fade-in-up text-lg text-slate-600 [animation-delay:200ms]">
-            A full range of organic-formula cleaning essentials, bulk value packs and hygiene
-            accessories, engineered for homes, hotels and hospitality businesses across Chennai.
+            {content.hero.subheading}
           </p>
 
           <ul className="mt-6 flex animate-fade-in-up flex-wrap gap-x-6 gap-y-2 [animation-delay:300ms]">
-            {HIGHLIGHTS.map((h) => (
+            {content.hero.highlights.map((h) => (
               <li key={h} className="flex items-center gap-2 text-sm font-medium text-slate-700">
                 <IconCheck className="h-4 w-4 text-emerald-600" />
                 {h}
@@ -47,11 +39,7 @@ export default function Hero() {
           </ul>
 
           <div className="mt-6 max-w-xl animate-fade-in-up rounded-2xl border border-emerald-100 bg-white/70 p-4 shadow-sm backdrop-blur-sm [animation-delay:400ms]">
-            <p className="text-base italic leading-relaxed text-slate-600">
-              Feathers by H-NEEDS is built on one simple promise — clean shouldn't be a compromise.
-              Every bottle blends organic-derived power with hospital-grade reliability, made right
-              here in Chennai. That's the standard we hold ourselves to, every time.
-            </p>
+            <p className="text-base italic leading-relaxed text-slate-600">{content.hero.promise}</p>
           </div>
 
           <div className="mt-8 flex animate-fade-in-up flex-col gap-3 [animation-delay:500ms] sm:flex-row sm:flex-wrap">
@@ -63,7 +51,7 @@ export default function Hero() {
               <IconChevronDown className="h-4 w-4 animate-bounce" />
             </a>
             <a
-              href="https://wa.me/917708840444"
+              href={content.contact.whatsapp}
               target="_blank"
               rel="noreferrer"
               className="flex w-full items-center justify-center gap-2 rounded-full border border-emerald-200 px-6 py-3 text-sm font-semibold text-emerald-800 transition hover:bg-emerald-50 sm:w-auto"

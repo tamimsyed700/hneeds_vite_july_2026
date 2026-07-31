@@ -4,6 +4,7 @@ import TrustBar from './components/TrustBar'
 import ProductSection from './components/ProductSection'
 import Footer from './components/Footer'
 import { products } from './data/products'
+import content from './data/content.json'
 
 const byCategory = (id) => products.filter((p) => p.category === id)
 
@@ -17,34 +18,34 @@ export default function App() {
 
         <ProductSection
           id="essentials"
-          eyebrow="Retail Range"
-          title="Home & Hospitality Essentials"
-          description="Ready-to-use bottles sized for daily use across households, hotel rooms and hospitality back-of-house."
+          eyebrow={content.sections.essentials.eyebrow}
+          title={content.sections.essentials.title}
+          description={content.sections.essentials.description}
           products={byCategory('essentials')}
         />
 
         <ProductSection
           id="bulk"
-          eyebrow="Value Packs"
-          title="Bulk 5L Value Packs"
-          description="Concentrated 5-litre containers built for housekeeping teams, restaurants and commercial kitchens."
+          eyebrow={content.sections.bulk.eyebrow}
+          title={content.sections.bulk.title}
+          description={content.sections.bulk.description}
           products={byCategory('bulk')}
           tint="tinted"
         />
 
         <ProductSection
           id="accessories"
-          eyebrow="Accessories"
-          title="Tissue & Accessories"
-          description="Finishing touches for guest-facing spaces — durable dispensers with refill packs included."
+          eyebrow={content.sections.accessories.eyebrow}
+          title={content.sections.accessories.title}
+          description={content.sections.accessories.description}
           products={byCategory('accessories')}
         />
 
         <ProductSection
           id="combo"
-          eyebrow="Best Value"
-          title="Combo Pack"
-          description="Everything you need to keep a home spotless, bundled into one all-in-one hygiene kit."
+          eyebrow={content.sections.combo.eyebrow}
+          title={content.sections.combo.title}
+          description={content.sections.combo.description}
           products={byCategory('combo')}
           tint="tinted"
         />

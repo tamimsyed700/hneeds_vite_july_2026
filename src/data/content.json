@@ -1,0 +1,63 @@
+{
+  "site": {
+    "title": "H-NEEDS | Feathers Cleaning Essentials",
+    "description": "Feathers by H-NEEDS — organic-formula home, hospitality and hotel cleaning products from Chennai."
+  },
+  "brand": {
+    "name": "H-NEEDS",
+    "tagline": "Feathers Hygiene Range"
+  },
+  "contact": {
+    "phone": "+917708840444",
+    "phoneDisplay": "77088 40444",
+    "whatsapp": "https://wa.me/917708840444",
+    "email": "hneedshospitality@gmail.com",
+    "address": "Kasturi Garden, 8th Cross Street, Palavakkam, ECR, Chennai 600041"
+  },
+  "hero": {
+    "eyebrow": "Hospital · House · Hospitality · Hotel",
+    "headingPrefix": "Feathers by H-NEEDS —",
+    "headingHighlight": "your trusted partner in hygiene.",
+    "subheading": "A full range of organic-formula cleaning essentials, bulk value packs and hygiene accessories, engineered for homes, hotels and hospitality businesses across Chennai.",
+    "highlights": [
+      "Organic-derived formulas",
+      "Hospital-grade disinfection",
+      "Made in Chennai",
+      "Doorstep delivery available",
+      "GST-compliant billing on all orders"
+    ],
+    "promise": "Feathers by H-NEEDS is built on one simple promise — clean shouldn't be a compromise. Every bottle blends organic-derived power with hospital-grade reliability, made right here in Chennai. That's the standard we hold ourselves to, every time."
+  },
+  "trustBar": [
+    { "value": "20+", "label": "Formulations" },
+    { "value": "5L", "label": "Bulk value packs" },
+    { "value": "100%", "label": "Made in Chennai" },
+    { "value": "99.9%", "label": "Germ kill claim" }
+  ],
+  "sections": {
+    "essentials": {
+      "eyebrow": "Retail Range",
+      "title": "Home & Hospitality Essentials",
+      "description": "Ready-to-use bottles sized for daily use across households, hotel rooms and hospitality back-of-house."
+    },
+    "bulk": {
+      "eyebrow": "Value Packs",
+      "title": "Bulk 5L Value Packs",
+      "description": "Concentrated 5-litre containers built for housekeeping teams, restaurants and commercial kitchens."
+    },
+    "accessories": {
+      "eyebrow": "Accessories",
+      "title": "Tissue & Accessories",
+      "description": "Finishing touches for guest-facing spaces — durable dispensers with refill packs included."
+    },
+    "combo": {
+      "eyebrow": "Best Value",
+      "title": "Combo Pack",
+      "description": "Everything you need to keep a home spotless, bundled into one all-in-one hygiene kit."
+    }
+  },
+  "footer": {
+    "tagline": "Feathers is H-NEEDS Hospitality's in-house range of organic-formula cleaning essentials, trusted across homes, hotels and hospitality businesses.",
+    "copyrightName": "H Needs Hospitality"
+  }
+}
