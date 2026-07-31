@@ -9,14 +9,14 @@ export const categories = [
 ]
 
 export const products = [
-  // --- Essentials (retail sizes) ---
+  // --- Home & Hospitality Essentials ---
   {
     id: 'fabric-wash-1l',
     name: 'Organic Fabric Wash',
     size: '1000 ml',
     category: 'essentials',
     tagline: 'Multi-action surfactant lifts tough stains, super brightness for whites',
-    image: '/products/8450.jpg',
+    image: 'https://pub-8ecb51bf241d424cb2252d1431c4b941.r2.dev/products/fabric-wash-1l.jpg',
   },
   {
     id: 'glass-cleaner-500',
@@ -25,7 +25,7 @@ export const products = [
     price: 139,
     category: 'essentials',
     tagline: 'Anti-static formula, 2x shine on glass, mirrors, steel & appliances',
-    image: '/products/8463.jpg',
+    image: 'https://pub-8ecb51bf241d424cb2252d1431c4b941.r2.dev/products/glass-cleaner-500.jpg',
   },
   {
     id: 'floor-wash-1l',
@@ -34,7 +34,7 @@ export const products = [
     price: 299,
     category: 'essentials',
     tagline: 'Indian Lilac & Lemon Mint — germ killer for kitchen surfaces & mopping',
-    image: '/products/8466.jpg',
+    image: 'https://pub-8ecb51bf241d424cb2252d1431c4b941.r2.dev/products/floor-wash-1l.jpg',
   },
   {
     id: 'car-wash-spray',
@@ -42,7 +42,7 @@ export const products = [
     size: '500 ml',
     category: 'essentials',
     tagline: 'Waterless concentrate, glossy paint-safe finish, 140+ washes per bottle',
-    image: '/products/8468.jpg',
+    image: 'https://pub-8ecb51bf241d424cb2252d1431c4b941.r2.dev/products/car-wash-spray.jpg',
   },
   {
     id: 'table-surface-cleaner',
@@ -50,7 +50,7 @@ export const products = [
     size: '500 ml',
     category: 'essentials',
     tagline: '10x better cleaning and germ kill, streak-free shine on 100+ surfaces',
-    image: '/products/8473.jpg',
+    image: 'https://pub-8ecb51bf241d424cb2252d1431c4b941.r2.dev/products/table-surface-cleaner.jpg',
   },
   {
     id: 'room-spray',
@@ -58,7 +58,7 @@ export const products = [
     size: '500 ml',
     category: 'essentials',
     tagline: 'Aqua balance liquid, 95% water-based, non-flammable, long-lasting scent',
-    image: '/products/8483.jpg',
+    image: 'https://pub-8ecb51bf241d424cb2252d1431c4b941.r2.dev/products/room-spray.jpg',
   },
   {
     id: 'magic-floor-cleaner',
@@ -67,7 +67,7 @@ export const products = [
     price: 115,
     category: 'essentials',
     tagline: 'Effective germ kill, long-lasting shine, aqua fresh fragrance',
-    image: '/products/FloorCleaner.jpg',
+    image: 'https://pub-8ecb51bf241d424cb2252d1431c4b941.r2.dev/products/magic-floor-cleaner.jpg',
   },
   {
     id: 'detergent-fabric-conditioner-500',
@@ -76,7 +76,7 @@ export const products = [
     price: 185,
     category: 'essentials',
     tagline: 'Detergent + conditioner in one, floral fragrance, safe on hands',
-    image: '/products/8492.jpg',
+    image: 'https://pub-8ecb51bf241d424cb2252d1431c4b941.r2.dev/products/detergent-fabric-conditioner-500.jpg',
   },
   {
     id: 'organic-dish-wash-1l',
@@ -84,7 +84,7 @@ export const products = [
     size: '1000 ml',
     category: 'essentials',
     tagline: 'Cuts grease fast, no white residue, pleasant lemon fragrance',
-    image: '/products/8497.jpg',
+    image: 'https://pub-8ecb51bf241d424cb2252d1431c4b941.r2.dev/products/organic-dish-wash-1l.jpg',
   },
   {
     id: 'sparkle-dish-wash-500',
@@ -92,7 +92,7 @@ export const products = [
     size: '500 ml',
     category: 'essentials',
     tagline: 'Lime-powered, 100 lemon extracts, no preservatives or synthetic colours',
-    image: '/products/Dish1.jpg',
+    image: 'https://pub-8ecb51bf241d424cb2252d1431c4b941.r2.dev/products/sparkle-dish-wash-500.jpg',
   },
   {
     id: 'toilet-cleaner-500',
@@ -100,10 +100,10 @@ export const products = [
     size: '500 ml',
     category: 'essentials',
     tagline: 'Deep action formula removes hard stains, kills 99.9% germs',
-    image: '/products/ToiletCleaner500ml.jpg',
+    image: 'https://pub-8ecb51bf241d424cb2252d1431c4b941.r2.dev/products/toilet-cleaner-500.jpg',
   },
 
-  // --- Bulk 5L ---
+  // --- Bulk 5L Value Packs ---
   {
     id: 'dish-wash-5l',
     name: 'Dish Wash',
@@ -111,7 +111,7 @@ export const products = [
     price: 899,
     category: 'bulk',
     tagline: 'Concentrated gel formula for high-volume kitchens',
-    image: '/products/DishWashBulk.jpg',
+    image: 'https://pub-8ecb51bf241d424cb2252d1431c4b941.r2.dev/products/dish-wash-5l.jpg',
   },
   {
     id: 'fabric-conditioner-5l',
@@ -120,7 +120,7 @@ export const products = [
     price: 999,
     category: 'bulk',
     tagline: 'Dosage-ready for high & medium load washing machines',
-    image: '/products/FabricBulk.jpg',
+    image: 'https://pub-8ecb51bf241d424cb2252d1431c4b941.r2.dev/products/fabric-conditioner-5l.jpg',
   },
   {
     id: 'floor-cleaner-gel-5l',
@@ -129,7 +129,7 @@ export const products = [
     price: 699,
     category: 'bulk',
     tagline: 'Deep-clean gel with lasting fragrance and shine',
-    image: '/products/FloorCleanerBulk.jpg',
+    image: 'https://pub-8ecb51bf241d424cb2252d1431c4b941.r2.dev/products/floor-cleaner-gel-5l.jpg',
   },
   {
     id: 'glass-cleaner-5l',
@@ -138,7 +138,7 @@ export const products = [
     price: 699,
     category: 'bulk',
     tagline: 'Crystal clean, anti-static, works faster with less wiping',
-    image: '/products/GlassCleanerBulk.jpg',
+    image: 'https://pub-8ecb51bf241d424cb2252d1431c4b941.r2.dev/products/glass-cleaner-5l.jpg',
   },
   {
     id: 'liquid-hand-wash-5l',
@@ -147,7 +147,7 @@ export const products = [
     price: 899,
     category: 'bulk',
     tagline: 'Everyday protection against skin infections, refreshing fragrance',
-    image: '/products/LiquidHandWash.jpg',
+    image: 'https://pub-8ecb51bf241d424cb2252d1431c4b941.r2.dev/products/liquid-hand-wash-5l.jpg',
   },
   {
     id: 'perfumed-phenyle-5l',
@@ -156,7 +156,7 @@ export const products = [
     price: 699,
     category: 'bulk',
     tagline: 'Herbal floor clean with long-lasting fragrance and anti-bacterial power',
-    image: '/products/PerfumePhenyleBulk.jpg',
+    image: 'https://pub-8ecb51bf241d424cb2252d1431c4b941.r2.dev/products/perfumed-phenyle-5l.jpg',
   },
   {
     id: 'soap-oil-5l',
@@ -165,7 +165,7 @@ export const products = [
     price: 499,
     category: 'bulk',
     tagline: 'Powerful disinfectant for kitchens, bathrooms & high-traffic areas',
-    image: '/products/SoapOilBulk.jpg',
+    image: 'https://pub-8ecb51bf241d424cb2252d1431c4b941.r2.dev/products/soap-oil-5l.jpg',
   },
   {
     id: 'toilet-cleaner-gel-5l',
@@ -174,7 +174,7 @@ export const products = [
     price: 699,
     category: 'bulk',
     tagline: 'High-viscosity gel removes long-standing stains, kills 99.9% germs',
-    image: '/products/ToiletCleanerGelBulk.jpg',
+    image: 'https://pub-8ecb51bf241d424cb2252d1431c4b941.r2.dev/products/toilet-cleaner-gel-5l.jpg',
   },
   {
     id: 'air-freshener-5l',
@@ -183,10 +183,10 @@ export const products = [
     price: 1499,
     category: 'bulk',
     tagline: 'No aerosol, VOC or phthalates — ready-to-use natural fragrance',
-    image: '/products/AirFreshnerBulk.jpg',
+    image: 'https://pub-8ecb51bf241d424cb2252d1431c4b941.r2.dev/products/air-freshener-5l.jpg',
   },
 
-  // --- Accessories ---
+  // --- Tissue & Accessories ---
   {
     id: 'tissue-box-family-pack',
     name: 'Tissue Box Dispenser — Family Pack',
@@ -194,16 +194,16 @@ export const products = [
     price: 299,
     category: 'accessories',
     tagline: '100 pulls, 2-ply virgin paper. Available in walnut/white and birch/black',
-    image: '/products/8523.jpg',
+    image: 'https://pub-8ecb51bf241d424cb2252d1431c4b941.r2.dev/products/tissue-box-family-pack.jpg',
   },
 
-  // --- Combo ---
+  // --- Combo Pack ---
   {
     id: 'all-in-one-combo',
     name: 'Ultimate All-in-One Home Cleaning Combo',
     size: '6-piece set',
     category: 'combo',
     tagline: 'Toilet Cleaner, Dish Wash, Floor Cleaner, Fabric Wash, Glass Cleaner & Room Spray',
-    image: '/products/8567.jpg',
+    image: 'https://pub-8ecb51bf241d424cb2252d1431c4b941.r2.dev/products/all-in-one-combo.jpg',
   },
 ]
